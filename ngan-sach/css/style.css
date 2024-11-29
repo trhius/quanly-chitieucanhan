@@ -802,205 +802,36 @@
   background: var(--material-theme-ref-primary-primary10, #002117);
   border-style: solid;
   border-color: var(--material-theme-sys-light-outline, #707974);
-  border-width: 1px;
-  padding: 12px 19px 16px 19px;
+  border-width: 1px 0 0 0;
+  padding: 8px 0;
   display: flex;
   flex-direction: row;
-  gap: 26px;
   align-items: center;
-  justify-content: center;
-  width: 428px;
-  position: sticky;
-  left: 0px;
-  bottom: 0px;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
 }
-.frame-3 {
+.frame-3, .frame-4, .frame-5, .frame-6, .frame-7 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 55px;
-  height: 45px;
+  gap: 4px;
+  width: 20%;
+  height: auto;
   position: relative;
 }
-.icon-dashboard {
-  flex-shrink: 0;
+.icon-dashboard, .icon-buget, .icon-adauga, .icon-educatie, .icon-more {
   width: 24px;
   height: 24px;
-  position: relative;
-  overflow: visible;
 }
-.dashboard {
+.dashboard, .budget, .add, .advice, .more {
   color: var(--material-theme-sys-light-outline, #707974);
-  text-align: left;
-  font-family: var(
-    --typography-text-regular-s-font-family,
-    "Roboto-Regular",
-    sans-serif
-  );
-  font-size: var(--typography-text-regular-s-font-size, 12px);
-  line-height: var(--typography-text-regular-s-line-height, 16px);
-  letter-spacing: var(--typography-text-regular-s-letter-spacing, 0.4px);
-  font-weight: var(--typography-text-regular-s-font-weight, 400);
-  position: relative;
-}
-.frame-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 55px;
-  height: 45px;
-  position: relative;
-}
-.icon-buget {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  overflow: visible;
-}
-.budget {
-  color: var(--material-theme-sys-light-on-primary, #ffffff);
-  text-align: left;
-  font-family: var(
-    --typography-text-regular-s-font-family,
-    "Roboto-Regular",
-    sans-serif
-  );
-  font-size: var(--typography-text-regular-s-font-size, 12px);
-  line-height: var(--typography-text-regular-s-line-height, 16px);
-  letter-spacing: var(--typography-text-regular-s-letter-spacing, 0.4px);
-  font-weight: var(--typography-text-regular-s-font-weight, 400);
-  position: relative;
-}
-.frame-5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 55px;
-  height: 45px;
-  position: relative;
-}
-.icon-adauga2 {
-  flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  overflow: visible;
-}
-.add {
-  color: var(--material-theme-sys-light-outline, #707974);
-  text-align: left;
-  font-family: var(
-    --typography-text-regular-s-font-family,
-    "Roboto-Regular",
-    sans-serif
-  );
-  font-size: var(--typography-text-regular-s-font-size, 12px);
-  line-height: var(--typography-text-regular-s-line-height, 16px);
-  letter-spacing: var(--typography-text-regular-s-letter-spacing, 0.4px);
-  font-weight: var(--typography-text-regular-s-font-weight, 400);
-  position: relative;
-}
-.frame-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 55px;
-  height: 45px;
-  position: relative;
-}
-.icon-educatie {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  overflow: visible;
-}
-.advices {
-  color: var(--material-theme-sys-light-outline, #707974);
-  text-align: left;
-  font-family: var(
-    --typography-text-regular-s-font-family,
-    "Roboto-Regular",
-    sans-serif
-  );
-  font-size: var(--typography-text-regular-s-font-size, 12px);
-  line-height: var(--typography-text-regular-s-line-height, 16px);
-  letter-spacing: var(--typography-text-regular-s-letter-spacing, 0.4px);
-  font-weight: var(--typography-text-regular-s-font-weight, 400);
-  position: relative;
-}
-.frame-7 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  width: 55px;
-  height: 45px;
-  position: relative;
-}
-.icon-more {
-  flex-shrink: 0;
-  width: 5.14px;
-  height: 24px;
-  position: relative;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
-.ellipse-1 {
-  background: var(--material-theme-sys-light-outline, #707974);
-  border-radius: 50%;
-  width: 100%;
-  height: 21.43%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 78.57%;
-  top: 0%;
-}
-.ellipse-2 {
-  background: var(--material-theme-sys-light-outline, #707974);
-  border-radius: 50%;
-  width: 100%;
-  height: 21.43%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 42.86%;
-  top: 35.71%;
-}
-.ellipse-3 {
-  background: var(--material-theme-sys-light-outline, #707974);
-  border-radius: 50%;
-  width: 100%;
-  height: 21.43%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 78.57%;
-}
-.more {
-  color: var(--material-theme-sys-light-outline, #707974);
-  text-align: left;
-  font-family: var(
-    --typography-text-regular-s-font-family,
-    "Roboto-Regular",
-    sans-serif
-  );
-  font-size: var(--typography-text-regular-s-font-size, 12px);
-  line-height: var(--typography-text-regular-s-line-height, 16px);
-  letter-spacing: var(--typography-text-regular-s-letter-spacing, 0.4px);
-  font-weight: var(--typography-text-regular-s-font-weight, 400);
-  position: relative;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
 }
