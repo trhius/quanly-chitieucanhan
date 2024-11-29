@@ -64,16 +64,7 @@ class LoginForm {
   }
 
   async loginRequest() {
-    return fetch(`${API_URL}/login`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: this.emailInput.value,
-        password: this.passwordInput.value
-      })
-    });
+    return '../tong-quan/index.html';
   }
 
   handleLoginSuccess(data) {

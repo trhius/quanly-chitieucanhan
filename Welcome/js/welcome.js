@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nextButton.addEventListener('click', () => {
         if (currentSlide === slides.length - 1) {
             // Navigate to main app on last slide
-            window.location.href = '../Đăng ký/index.html';
+            window.location.href = '../dang-ky/index.html';
             return;
         }
         currentSlide = (currentSlide + 1) % slides.length;
