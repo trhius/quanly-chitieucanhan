@@ -70,6 +70,24 @@
   width: 280px;
   height: 280px;
   margin: 20px auto;
+}
+.menu-bottom {
+  background: var(--material-theme-ref-primary-primary10, #002117);
+  border-style: solid;
+  border-color: var(--material-theme-sys-light-outline, #707974);
+  border-width: 1px 0 0 0;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.frame-3, .frame-4, .frame-5, .frame-6, .frame-7 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,6 +105,40 @@
 .conectare {
   color: #FFFFFF;
   text-align: center;
+  gap: 4px;
+  width: 20%;
+  height: auto;
+  position: relative;
+}
+.icon-dashboard, .icon-buget, .icon-adauga, .icon-educatie, .icon-more {
+  width: 24px;
+  height: 24px;
+}
+.dashboard, .budget, .add, .advice, .more {
+  color: var(--material-theme-sys-light-outline, #707974);
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+.scan2 {
+  border-radius: 30px;
+  width: 312px;
+  height: 312px;
+  position: sticky;
+  left: calc(50% - 156px);
+  top: calc(50% - 166px);
+  overflow: visible;
+}
+.group-34718 {
+  position: sticky;
+  left: 127px;
+  top: 106px;
+}
+.m-h-a-n-c-a-t-i {
+  color: var(--neutral-grey-50, #747875);
+  text-align: left;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 16px;
   line-height: 48px;
