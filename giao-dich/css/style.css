@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.giao-dich {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.header {
+  background: #d4f4e4;
+  height: 87px;
+  padding: 40px 16px 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header img {
+  width: 24px;
+  height: 24px;
+}
+
+.header span {
+  color: #003829;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 18px;
+}
+
+.transaction-list {
+  padding: 16px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #E8E8E8;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.icon-circle.car {
+  border: 2px solid #FF8C21;
+}
+
+.icon-circle.home {
+  border: 2px solid #FF5843;
+}
+
+.icon-circle img {
+  width: 20px;
+  height: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date {
+  color: #747875;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 14px;
+}
+
+.name {
+  color: #000000;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+}
+
+.amount {
+  color: #000000;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.menu-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #002117;
+  border-top: 1px solid #707974;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 19px 16px;
+}
+
+.menu-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-item div {
+  color: #707974;
+  font-size: 12px;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.menu-item img {
+  width: 24px;
+  height: 24px;
+}
