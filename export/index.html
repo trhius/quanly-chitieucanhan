@@ -1,131 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
-  
-  
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Xuất dữ liệu</title>
 </head>
 <body>
-  <div class="xu-t-d-li-u">
+  <div class="export">
+    <!-- Header -->
     <div class="header-navigation">
-      <div class="rectangle-6"></div>
-      <div class="frame-88">
-        <img class="arrow-left" src="arrow-left0.svg" />
-        <div class="pagina-principal">Xuất dữ liệu</div>
-      </div>
-      <div class="status-bar">
-        <img class="status-bar-content" src="status-bar-content0.svg" />
-      </div>
+      <a href="../khac/index.html">
+        <img class="arrow-left" src="./assets/arrow-left0.svg" alt="back" />
+      </a>
+      <div class="title">Xuất dữ liệu</div>
     </div>
-    <div class="button-primary-conect">
-      <div class="conectare">Xác nhận</div>
-    </div>
-    <div class="frame-35035">
-      <div class="input">
-        <div class="text">
-          <div class="label">Từ ngày</div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="date-range">
+        <div class="date-input">
+          <label>Từ ngày</label>
+          <input type="text" placeholder="dd/mm/yyyy" />
+          <!-- <img src="./assets/calendar.svg" alt="calendar" /> -->
         </div>
-        <div class="input2">
-          <div class="text2">
-            <div class="label">Từ ngày</div>
-          </div>
-          <div class="calendar">
-            <img class="vector" src="vector0.svg" />
-          </div>
+        
+        <div class="date-input">
+          <label>Đến ngày</label>
+          <input type="text" placeholder="dd/mm/yyyy" />
+          <!-- <img src="./assets/calendar.svg" alt="calendar" /> -->
         </div>
       </div>
-      <div class="input">
-        <div class="text">
-          <div class="label">Đến ngày</div>
+
+      <div class="format-section">
+        <label>Định dạng</label>
+        <div class="format-buttons">
+          <button class="active" onclick="setActiveButton(this)">PDF</button>
+          <button onclick="setActiveButton(this)">EXCEL</button>
+          <button onclick="setActiveButton(this)">CSV</button>
+          <button onclick="setActiveButton(this)">EMAIL</button>
         </div>
-        <div class="input2">
-          <div class="label2">dd/mm/yyyy</div>
-          <div class="calendar2">
-            <img class="vector2" src="vector1.svg" />
-          </div>
-        </div>
       </div>
+
+      <div class="illustration">
+        <img src="./assets/group0.svg" alt="Export illustration" />
+      </div>
+
+      <a href="../khac/index.html" class="button-primary">
+        <div class="button-text">Xác nhận</div>
+      </a>
     </div>
-    <div class="label3">dd/mm/yyyy</div>
-    <div class="text3">
-      <div class="label">Định dạng</div>
-    </div>
-    <div class="navigation-tabs-5">
-      <div class="_7-d">
-        <div class="t-t-c">PDF</div>
-      </div>
-      <div class="_3-d">
-        <div class="_1">EXCEL</div>
-      </div>
-      <div class="_3-m">
-        <div class="_2">CSV</div>
-      </div>
-      <div class="_1-a">
-        <div class="_3">EMAIL</div>
-      </div>
-    </div>
-    <div class="manager-desk">
-      <img class="group" src="group0.svg" />
-    </div>
+
+    <!-- Bottom Navigation -->
     <div class="menu-bottom">
-      <div class="frame-3">
-        <img class="icon-dashboard" src="icon-dashboard0.svg" />
-        <div class="dashboard">Tổng quan</div>
-      </div>
-      <div class="frame-4">
-        <img class="icon-buget" src="icon-buget0.svg" />
-        <div class="budget">Ngân sách</div>
-      </div>
-      <div class="frame-5">
-        <img class="icon-adauga" src="icon-adauga0.svg" />
-        <div class="add">Thêm</div>
-      </div>
-      <div class="frame-6">
-        <img class="icon-educatie" src="icon-educatie0.svg" />
-        <div class="advices">Lời khuyên</div>
-      </div>
-      <div class="frame-7">
-        <div class="icon-more">
-          <div class="ellipse-1"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-        </div>
-        <div class="more">Khác</div>
-      </div>
+      <a href="../tong-quan/index.html" class="menu-item">
+        <img src="./assets/icon-dashboard0.svg" alt="dashboard">
+        <div>Tổng quan</div>
+      </a>
+      <a href="../ngan-sach/index.html" class="menu-item">
+        <img src="./assets/icon-buget0.svg" alt="budget">
+        <div>Ngân sách</div>
+      </a>
+      <a href="../them-giao-dich/index.html" class="menu-item active">
+        <img src="./assets/icon-adauga0.svg" alt="add">
+        <div>Thêm</div>
+      </a>
+      <a href="../loi-khuyen/index.html" class="menu-item">
+        <img src="./assets/icon-educatie0.svg" alt="advice">
+        <div>Lời khuyên</div>
+      </a>
+      <a href="../khac/index.html" class="menu-item">
+        <img src="./assets/icon-more0.svg" alt="more">
+        <div>Khác</div>
+      </a>
     </div>
   </div>
-  
+
+  <script>
+  function setActiveButton(clickedButton) {
+    // Remove active class from all buttons
+    document.querySelectorAll('.format-buttons button').forEach(button => {
+      button.classList.remove('active');
+    });
+    
+    // Add active class to clicked button
+    clickedButton.classList.add('active');
+  }
+  </script>
 </body>
 </html>
