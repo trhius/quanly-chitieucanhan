@@ -57,7 +57,7 @@ class RegisterForm {
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       
       // Redirect to login page after successful registration
-      window.location.href = '../Đăng nhập/index.html';
+      window.location.href = '../dang-nhap/index.html';
     } catch (error) {
       console.error('Registration failed:', error);
     } finally {
