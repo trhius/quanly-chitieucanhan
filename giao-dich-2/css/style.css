@@ -102,23 +102,30 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 73px;
   background: #002117;
-  padding: 8px 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
 }
 
 .menu-item {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  text-decoration: none;
 }
 
-.menu-item span {
+.menu-item div {
   color: #707974;
   font-size: 12px;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.menu-item.active div {
+  color: #1CA380;
 }
 
 .menu-item img {
