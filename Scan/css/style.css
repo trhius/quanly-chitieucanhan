@@ -15,25 +15,47 @@
   background: #d4f4e4;
   height: 87px;
   position: relative;
-  padding: 40px 16px 0;
+  padding: 40px 16px 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.arrow-left {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .th-m-giao-d-ch {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: #003829;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
 
+.person {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
+
 .m-h-a-n-c-a-t-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   color: #000000;
-  text-align: center;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 16px;
+}
+
+.m-h-a-n-c-a-t-i img {
+  width: 20px;
+  height: 20px;
 }
 
 .qu-t-ho-n {
