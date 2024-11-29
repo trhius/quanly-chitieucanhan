@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #F9FBF8;
+}
+
+.header {
+  background: #D4F4E4;
+  padding: 40px 16px 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header img {
+  width: 24px;
+  height: 24px;
+}
+
+.header span {
+  color: #003829;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.transaction-list {
+  padding: 16px;
+}
+
+.transaction-item {
+  background: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.icon-circle.donation {
+  border: 2px solid #FF7AE2;
+}
+
+.icon-circle.food {
+  border: 2px solid #4CAF50;
+}
+
+.icon-circle.clothes {
+  border: 2px solid #9C27B0;
+}
+
+.icon-circle.gift {
+  border: 2px solid #2196F3;
+}
+
+.icon-circle img {
+  width: 20px;
+  height: 20px;
+}
+
+.info .date {
+  color: #747875;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.info .name {
+  color: #000000;
+  font-size: 16px;
+}
+
+.amount {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #002117;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.menu-item span {
+  color: #707974;
+  font-size: 12px;
+}
+
+.menu-item img {
+  width: 24px;
+  height: 24px;
+}
+
+
