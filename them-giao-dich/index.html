@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/style.css">
   
   
   <style>
@@ -43,12 +43,9 @@
       <div class="frame-35040">
         <div class="frame-91">
           <div class="_890-000">
-            <span>
-              <span class="_890-000-span">890,000</span>
-              <span class="_890-000-span2">|</span>
-            </span>
+            <input type="number" class="amount-input" placeholder="0" />
           </div>
-          <img class="vector-27" src="vector-270.svg" />
+          <!-- <div class="vector-27"></div> -->
         </div>
       </div>
       <div class="vn">VNĐ</div>
@@ -56,43 +53,43 @@
     <div class="frame-103">
       <div class="t-t-i-kho-n">Từ tài khoản</div>
       <div class="frame-94">
-        <div class="button-navigation-conturi">
-          <img class="icon-check" src="icon-check0.svg" />
+        <div class="button-navigation-conturi active" onclick="selectAccount(this)">
+          <img class="icon-check" src="./assets/icon-check0.svg" />
           <div class="tcb">TCB</div>
         </div>
-        <div class="button-navigation-conturi2">
+        <div class="button-navigation-conturi2" onclick="selectAccount(this)">
           <div class="mb">MB</div>
         </div>
-        <div class="button-navigation-conturi3">
+        <div class="button-navigation-conturi3" onclick="selectAccount(this)">
           <div class="ti-n-m-t">Tiền mặt</div>
         </div>
       </div>
     </div>
-    <div class="button-primary-conect">
+    <a href="../tong-quan/index.html" class="button-primary-conect">
       <div class="conectare">Xác nhận</div>
-    </div>
+    </a>
     <div class="frame-236">
       <div class="danh-m-c">Danh mục</div>
       <div class="group-99">
         <div class="icon-car-circle">
-          <img class="icon-car" src="icon-car0.svg" />
+          <img class="icon-car" src="./assets/icon-car0.svg" />
         </div>
-        <img class="icon-food-circle" src="icon-food-circle0.svg" />
-        <img class="icon-gift-circle" src="icon-gift-circle0.svg" />
+        <img class="icon-food-circle" src="./assets/icon-food-circle0.svg" />
+        <img class="icon-gift-circle" src="./assets/icon-gift-circle0.svg" />
         <div class="icon-health-circle">
-          <img class="icon-health" src="icon-health0.svg" />
+          <img class="icon-health" src="./assets/icon-health0.svg" />
         </div>
         <div class="icon-home-circle">
-          <img class="icon-home" src="icon-home0.svg" />
+          <img class="icon-home" src="./assets/icon-home0.svg" />
         </div>
         <div class="icon-clothes-circle">
-          <img class="icon-clothes" src="icon-clothes0.svg" />
+          <img class="icon-clothes" src="./assets/icon-clothes0.svg" />
         </div>
         <div class="icon-donation-circle">
-          <img class="icon-donation" src="icon-donation0.svg" />
+          <img class="icon-donation" src="./assets/icon-donation0.svg" />
         </div>
         <div class="icon-beauty-cicle">
-          <img class="icon-beauty" src="icon-beauty0.svg" />
+          <img class="icon-beauty" src="./assets/icon-beauty0.svg" />
         </div>
       </div>
     </div>
@@ -100,46 +97,72 @@
       <div class="header-navigation">
         <div class="rectangle-6"></div>
         <div class="status-bar">
-          <img class="status-bar-content" src="status-bar-content0.svg" />
+          <img class="status-bar-content" src="./assets/status-bar-content0.svg" />
         </div>
         <div class="th-m-giao-d-ch2">Thêm giao dịch</div>
-        <img class="scan" src="scan0.svg" />
+        <a href="../scan/index.html">
+          <img class="scan" src="./assets/scan0.svg" />
+        </a>
       </div>
       <div class="navigation-tab-top-2">
         <div class="frame-10">
-          <div class="thu-nh-p-m-i">Thu nhập mới</div>
-          <div class="chi-ti-u-m-i">Chi tiêu mới</div>
-          <img class="selection-line-120" src="selection-line-1200.svg" />
+          <a href="../them-giao-dich-2/index.html" class="thu-nh-p-m-i">Thu nhập mới</a>
+          <a href="../them-giao-dich/index.html" class="chi-ti-u-m-i">Chi tiêu mới</a>
+          <img class="selection-line-120" src="./assets/selection-line-1200.svg" />
         </div>
       </div>
     </div>
     <div class="menu-bottom">
-      <div class="frame-3">
-        <img class="icon-dashboard" src="icon-dashboard0.svg" />
+      <a href="../tong-quan/index.html" class="frame-3">
+        <img class="icon-dashboard" src="./assets/icon-dashboard0.svg" />
         <div class="dashboard">Tổng quan</div>
-      </div>
-      <div class="frame-4">
-        <img class="icon-buget" src="icon-buget0.svg" />
+      </a>
+      <a href="../ngan-sach/index.html" class="frame-4">
+        <img class="icon-buget" src="./assets/icon-buget0.svg" />
         <div class="budget">Ngân sách</div>
-      </div>
-      <div class="frame-5">
-        <img class="icon-adauga" src="icon-adauga0.svg" />
+      </a>
+      <a href="../them-giao-dich/index.html" class="frame-5">
+        <img class="icon-adauga" src="./assets/icon-adauga0.svg" />
         <div class="add">Thêm</div>
-      </div>
-      <div class="frame-6">
-        <img class="icon-educatie" src="icon-educatie0.svg" />
-        <div class="advices">Lời khuyên</div>
-      </div>
-      <div class="frame-7">
+      </a>
+      <a href="../loi-khuyen/index.html" class="frame-6">
+        <img class="icon-educatie" src="./assets/icon-educatie0.svg" />
+        <div class="advice">Lời khuyên</div>
+      </a>
+      <a href="../khac/index.html" class="frame-7">
         <div class="icon-more">
           <div class="ellipse-1"></div>
           <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
+          <div class="ellipse-34"></div>
         </div>
         <div class="more">Khác</div>
-      </div>
+      </a>
     </div>
   </div>
   
+  <script>
+  function selectAccount(element) {
+    // Remove active class and icon-check from all buttons
+    document.querySelectorAll('.button-navigation-conturi, .button-navigation-conturi2, .button-navigation-conturi3')
+      .forEach(btn => {
+        btn.classList.remove('active');
+        const checkIcon = btn.querySelector('.icon-check');
+        if (checkIcon) {
+          checkIcon.remove();
+        }
+      });
+    
+    // Add active class to clicked button
+    element.classList.add('active');
+    
+    // Add check icon to active button
+    if (!element.querySelector('.icon-check')) {
+      const checkIcon = document.createElement('img');
+      checkIcon.className = 'icon-check';
+      checkIcon.src = './assets/icon-check0.svg';
+      element.insertBefore(checkIcon, element.firstChild);
+    }
+  }
+  </script>
 </body>
 </html>
