@@ -1,0 +1,53 @@
+:root {
+  /* Colors */
+  --color-primary: #1ca380;
+  --color-primary-hover: #158f6f;
+  --color-primary-dark: #006C52;
+  --color-text: #444745;
+  --color-outline-variant: #bfc9c3;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gradients */
+  --gradient-background: linear-gradient(180deg, rgba(207, 228, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+  /* Typography */
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+  
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  
+  /* Line heights */
+  --line-height-normal: normal;
+  --line-height-base: 24px;
+  --line-height-lg: 28px;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+
+  /* Border radius */
+  --border-radius-base: 8px;
+  --border-radius-full: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Z-index layers */
+  --z-index-base: 1;
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal: 1040;
+  --z-index-popover: 1050;
+  --z-index-tooltip: 1060;
+} 

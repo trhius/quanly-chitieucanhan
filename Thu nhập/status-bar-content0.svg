@@ -1,0 +1,30 @@
+<svg width="72" height="15" viewBox="0 0 72 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_145_720" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="1" width="20" height="14">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.0606689 1.22876L9.56985 14.1553L19.079 1.22876H0.0606689Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_145_720)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.56895 1.22864C1.72387 1.22864 -4.69482 7.04558 -4.69482 14.1552C-4.69482 21.2648 1.72387 27.0817 9.56895 27.0817C17.414 27.0817 23.8327 21.2648 23.8327 14.1552C23.8327 7.04558 17.414 1.22864 9.56895 1.22864ZM9.56958 23.8501C3.62635 23.8501 -1.12825 19.5412 -1.12825 14.1552C-1.12825 8.76913 3.62635 4.46028 9.56958 4.46028C15.5128 4.46028 20.2674 8.76913 20.2674 14.1552C20.2674 19.5412 15.5128 23.8501 9.56958 23.8501Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.56892 4.46033C3.62568 4.46033 -1.12891 8.76917 -1.12891 14.1552C-1.12891 19.5413 3.62568 23.8501 9.56892 23.8501C15.5122 23.8501 20.2668 19.5413 20.2668 14.1552C20.2668 8.76917 15.5122 4.46033 9.56892 4.46033ZM9.56975 20.6185C5.64721 20.6185 2.43786 17.7101 2.43786 14.1553C2.43786 10.6005 5.64721 7.692 9.56975 7.692C13.4923 7.692 16.7016 10.6005 16.7016 14.1553C16.7016 17.7101 13.4923 20.6185 9.56975 20.6185Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.56755 7.69189C5.64502 7.69189 2.43567 10.6004 2.43567 14.1552C2.43567 17.71 5.64502 20.6184 9.56755 20.6184C13.4901 20.6184 16.6994 17.71 16.6994 14.1552C16.6994 10.6004 13.4901 7.69189 9.56755 7.69189ZM9.56782 17.3868C7.54712 17.3868 6.00188 15.9864 6.00188 14.1552C6.00188 12.3239 7.54712 10.9235 9.56782 10.9235C11.5885 10.9235 13.1338 12.3239 13.1338 14.1552C13.1338 15.9864 11.5885 17.3868 9.56782 17.3868Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.57021 17.387C11.5396 17.387 13.1362 15.9401 13.1362 14.1553C13.1362 12.3706 11.5396 10.9237 9.57021 10.9237C7.6008 10.9237 6.00427 12.3706 6.00427 14.1553C6.00427 15.9401 7.6008 17.387 9.57021 17.387Z" fill="#00513D"/>
+</g>
+<mask id="mask1_145_720" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="30" y="1" width="16" height="14">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.2289 14.1553V1.22876L30.9651 14.1553H45.2289Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_145_720)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.6627 1.22876V14.1553H45.2287V1.22876H41.6627Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.0981 1.22876V14.1553H41.6641V1.22876H38.0981Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34.5315 1.22876V14.1553H38.0974V1.22876H34.5315Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.9651 1.22876V14.1553H34.531V1.22876H30.9651Z" fill="#00513D"/>
+</g>
+<mask id="mask2_145_720" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="61" y="0" width="11" height="15">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70.191 1.22882H69.0024V0.151611H64.2478V1.22882H63.0591C62.3459 1.22882 61.8705 1.65971 61.8705 2.30603V13.0781C61.8705 13.7245 62.3459 14.1554 63.0591 14.1554H70.191C70.9042 14.1554 71.3797 13.7245 71.3797 13.0781V2.30603C71.3797 1.65971 70.9042 1.22882 70.191 1.22882Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_145_720)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.871 10.9236V14.1552H71.3802V10.9236H61.871Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.871 7.69202V10.9236H71.3802V7.69202H61.871Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.871 4.46033V7.69196H71.3802V4.46033H61.871Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.871 1.22876V4.46039H71.3802V1.22876H61.871Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64.25 0.151611V1.22882H69.0046V0.151611H64.25Z" fill="#3F3D56" fill-opacity="0.24"/>
+</g>
+</svg>

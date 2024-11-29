@@ -1,0 +1,253 @@
+/* Reset & Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--gradient-background);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.ng-nh-p {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Logo */
+.image-6 {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  margin: 0 auto 60px;
+  padding: 0;
+  object-fit: cover;
+}
+
+/* Title */
+.ng-nh-p2 {
+  color: var(--color-text);
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Form */
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.input {
+  text-align: left;
+}
+
+.label {
+  color: var(--color-outline);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.input2,
+.input3 {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 4px;
+  font-size: 16px;
+  background: var(--color-white);
+}
+
+.input3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: var(--color-white);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 48px 0 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+.icon-solid-eye-off {
+  position: absolute;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.icon-solid-eye-off img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Submit Button */
+.button {
+  width: 100%;
+  height: 48px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background: var(--color-primary-hover);
+}
+
+/* Social Login */
+.frame-35033 {
+  margin-bottom: 40px;
+}
+
+.label4 {
+  color: var(--color-outline);
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.frame-218 {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.frame-174,
+.frame-1742 {
+  width: 48px;
+  height: 48px;
+  background: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.frame-174:hover,
+.frame-1742:hover {
+  transform: scale(1.1);
+}
+
+/* Register Link */
+.frame-35032 {
+  text-align: center;
+}
+
+.n-u-b-n-ch-a-c-t-i-kho-n {
+  color: var(--color-outline);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.ng-k {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ng-k:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Error Message */
+.error-message {
+  color: var(--color-error);
+  font-size: 12px;
+  margin-top: 4px;
+  text-align: left;
+  display: none;
+}
+
+/* Input khi có lỗi */
+.input.error .password-wrapper {
+  border-color: var(--color-error);
+}
+
+.input.error .error-message {
+  display: block;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--color-primary);
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .ng-nh-p {
+    padding: 20px 16px;
+  }
+  
+  .frame-218 {
+    gap: 16px;
+  }
+}

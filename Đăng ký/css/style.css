@@ -1,0 +1,172 @@
+/* Reset & Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--gradient-background);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.ng-k {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Title */
+.ng-k2 {
+  color: var(--color-text);
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Form */
+.frame-35036 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Input Fields */
+.text {
+  margin-bottom: 8px;
+}
+
+.label2 {
+  color: var(--color-outline);
+  font-size: 14px;
+  text-align: left;
+}
+
+.input2 {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 4px;
+  font-size: 16px;
+  background: var(--color-white);
+}
+
+/* Name Fields Container */
+.frame-35035 {
+  display: flex;
+  gap: 10px;
+}
+
+.input3 {
+  flex: 1;
+}
+
+.input3:first-child {
+  flex: 1.5;
+}
+
+/* Password Field */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 4px;
+  background: var(--color-white);
+}
+
+.password-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 48px 0 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+.icon-solid-eye-off {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Error Message */
+.error-message {
+  color: var(--color-error);
+  font-size: 12px;
+  margin-top: 4px;
+  text-align: left;
+  display: none;
+  content: "Tối thiểu 6 ký tự";
+}
+
+.input.error .password-wrapper {
+  border-color: var(--color-error);
+}
+
+.input.error .error-message {
+  display: block;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  height: 48px;
+  background: var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+}
+
+.button:hover {
+  background: var(--color-primary-hover);
+}
+
+/* Bottom Text & Link */
+.frame-35032 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.n-u-c-t-i-kho-n {
+  color: var(--color-outline);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.ng-nh-p {
+  color: var(--color-primary);
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .ng-k {
+    padding: 20px 16px;
+  }
+}
+
+/* Logo spacing */
+.image-5 {
+  margin-bottom: 60px;
+}

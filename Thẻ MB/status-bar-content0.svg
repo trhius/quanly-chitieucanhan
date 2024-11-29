@@ -1,0 +1,30 @@
+<svg width="72" height="15" viewBox="0 0 72 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_46_1742" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="1" width="20" height="14">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.0604248 1.22876L9.5696 14.1553L19.0788 1.22876H0.0604248Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_46_1742)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5687 1.22876C1.72363 1.22876 -4.69507 7.0457 -4.69507 14.1553C-4.69507 21.2649 1.72363 27.0818 9.5687 27.0818C17.4138 27.0818 23.8325 21.2649 23.8325 14.1553C23.8325 7.0457 17.4138 1.22876 9.5687 1.22876ZM9.56934 23.8502C3.6261 23.8502 -1.12849 19.5414 -1.12849 14.1553C-1.12849 8.76925 3.6261 4.46041 9.56934 4.46041C15.5126 4.46041 20.2672 8.76925 20.2672 14.1553C20.2672 19.5414 15.5126 23.8502 9.56934 23.8502Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.56868 4.46021C3.62544 4.46021 -1.12915 8.76905 -1.12915 14.1551C-1.12915 19.5412 3.62544 23.85 9.56868 23.85C15.5119 23.85 20.2665 19.5412 20.2665 14.1551C20.2665 8.76905 15.5119 4.46021 9.56868 4.46021ZM9.5695 20.6184C5.64696 20.6184 2.43762 17.7099 2.43762 14.1551C2.43762 10.6004 5.64696 7.69188 9.5695 7.69188C13.492 7.69188 16.7014 10.6004 16.7014 14.1551C16.7014 17.7099 13.492 20.6184 9.5695 20.6184Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.56731 7.69189C5.64477 7.69189 2.43542 10.6004 2.43542 14.1552C2.43542 17.71 5.64477 20.6184 9.56731 20.6184C13.4898 20.6184 16.6992 17.71 16.6992 14.1552C16.6992 10.6004 13.4898 7.69189 9.56731 7.69189ZM9.56758 17.3868C7.54688 17.3868 6.00164 15.9864 6.00164 14.1552C6.00164 12.3239 7.54688 10.9235 9.56758 10.9235C11.5883 10.9235 13.1335 12.3239 13.1335 14.1552C13.1335 15.9864 11.5883 17.3868 9.56758 17.3868Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.56997 17.3868C11.5394 17.3868 13.1359 15.94 13.1359 14.1552C13.1359 12.3704 11.5394 10.9236 9.56997 10.9236C7.60056 10.9236 6.00403 12.3704 6.00403 14.1552C6.00403 15.94 7.60056 17.3868 9.56997 17.3868Z" fill="#00513D"/>
+</g>
+<mask id="mask1_46_1742" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="30" y="1" width="16" height="14">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.2286 14.1553V1.22876L30.9648 14.1553H45.2286Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_46_1742)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.6625 1.22876V14.1553H45.2284V1.22876H41.6625Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.0979 1.22876V14.1553H41.6638V1.22876H38.0979Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34.5312 1.22876V14.1553H38.0972V1.22876H34.5312Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.9648 1.22876V14.1553H34.5308V1.22876H30.9648Z" fill="#00513D"/>
+</g>
+<mask id="mask2_46_1742" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="61" y="0" width="11" height="15">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70.1908 1.22882H69.0021V0.151611H64.2475V1.22882H63.0589C62.3457 1.22882 61.8702 1.65971 61.8702 2.30603V13.0781C61.8702 13.7245 62.3457 14.1554 63.0589 14.1554H70.1908C70.904 14.1554 71.3794 13.7245 71.3794 13.0781V2.30603C71.3794 1.65971 70.904 1.22882 70.1908 1.22882Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_46_1742)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.8707 10.9236V14.1552H71.3799V10.9236H61.8707Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.8707 7.69189V10.9235H71.3799V7.69189H61.8707Z" fill="#00513D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.8707 4.46045V7.69208H71.3799V4.46045H61.8707Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.8707 1.22876V4.46039H71.3799V1.22876H61.8707Z" fill="#3F3D56" fill-opacity="0.24"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64.2498 0.151611V1.22882H69.0043V0.151611H64.2498Z" fill="#3F3D56" fill-opacity="0.24"/>
+</g>
+</svg>

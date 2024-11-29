@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --color-primary: #1ca380;
+  --color-primary-hover: #158f6f;
+  --color-error: #ff897d;
+  --color-text: #444745;
+  --color-outline: #707974;
+  --color-white: #ffffff;
+  --color-outline-variant: #bfc9c3;
+  
+  /* Shadows */
+  --shadow-sm: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0px 1px 9px rgba(0, 0, 0, 0.14);
+  
+  /* Gradients */
+  --gradient-background: linear-gradient(
+    180deg,
+    rgba(207, 228, 217, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  
+  /* Transitions */
+  --transition-base: 0.3s ease;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ng-k">
+    <img class="image-5" src="assets/images/image-50.png" alt="Logo" />
+    
+    <div class="ng-k2">Đăng ký</div>
+    
+    <form id="registerForm" class="frame-35036">
+      <div class="input">
+        <div class="text">
+          <div class="label2">Email</div>
+        </div>
+        <input type="email" class="input2" name="email" required placeholder="Nhập email của bạn">
+      </div>
+      
+      <div class="frame-35035">
+        <div class="input3">
+          <div class="text">
+            <div class="label2">Họ và tên đệm</div>
+          </div>
+          <input type="text" class="input2" name="firstName" required placeholder="Nhập họ và tên đệm">
+        </div>
+        <div class="input3">
+          <div class="text">
+            <div class="label2">Tên</div>
+          </div>
+          <input type="text" class="input2" name="lastName" required placeholder="Nhập tên">
+        </div>
+      </div>
+      
+      <div class="input">
+        <div class="text">
+          <div class="label2">Mật khẩu</div>
+        </div>
+        <div class="password-wrapper">
+          <input type="password" class="password-input" name="password" required placeholder="Nhập mật khẩu">
+          <button type="button" class="icon-solid-eye-off">
+            <img class="group" src="assets/icons/group0.svg" alt="toggle password" />
+          </button>
+        </div>
+        <div class="error-message">Tối thiểu 6 ký tự</div>
+      </div>
+      
+      <button type="submit" class="button">
+        <div class="label">Đăng ký</div>
+      </button>
+    </form>
+
+    <div class="frame-35032">
+      <div class="n-u-c-t-i-kho-n">Nếu đã có tài khoản ?</div>
+      <a href="../Đăng nhập/index.html" class="ng-nh-p">Đăng nhập</a>
+    </div>
+  </div>
+
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
