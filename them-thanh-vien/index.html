@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="xu-t-d-li-u">
+    <div class="header-navigation">
+      <div class="rectangle-6"></div>
+      <div class="frame-88">
+        <a href="../ngan-sach-nhom/index.html"><img class="arrow-left" src="./assets/arrow-left0.svg" /></a>
+        <div class="pagina-principal">Thêm thành viên</div>
+      </div>
+      <div class="status-bar">
+        <img class="status-bar-content" src="./assets/status-bar-content0.svg" />
+      </div>
+    </div>
+    <div class="button-primary-conect">
+      <a href="../ngan-sach-nhom/index.html" class="conectare">Xác nhận</a>
+    </div>
+    <div class="input">
+      <div class="text">
+        <div class="label">Email:</div>
+      </div>
+      <input 
+        type="email" 
+        class="input-field" 
+        placeholder="Nhập email thành viên"
+        required
+      >
+    </div>
+    <div class="text2">
+      <div class="label">Quản lý quyền:</div>
+      <div class="permission-options">
+        <div class="permission-option">
+          <input type="checkbox" id="transactions" class="permission-checkbox">
+          <label for="transactions" class="permission-label">Giao dịch</label>
+        </div>
+        
+        <div class="permission-option">
+          <input type="checkbox" id="spending" class="permission-checkbox">
+          <label for="spending" class="permission-label">Chi tiêu</label>
+        </div>
+        
+        <div class="permission-option">
+          <input type="checkbox" id="goals" class="permission-checkbox">
+          <label for="goals" class="permission-label">Mục tiêu</label>
+        </div>
+        
+        <div class="permission-option">
+          <input type="checkbox" id="members" class="permission-checkbox">
+          <label for="members" class="permission-label">Thêm thành viên</label>
+        </div>
+        
+        <div class="permission-option">
+          <input type="checkbox" id="admin" class="permission-checkbox">
+          <label for="admin" class="permission-label">Quản trị viên</label>
+        </div>
+      </div>
+    </div>
+    <div class="menu-bottom">
+      <a href="../tong-quan/index.html" class="frame-3">
+        <img class="icon-dashboard" src="./assets/icon-dashboard0.svg" />
+        <div class="dashboard">Tổng quan</div>
+      </a>
+      <a href="../ngan-sach-ca-nhan/index.html" class="frame-4">
+        <img class="icon-buget" src="./assets/icon-buget0.svg" />
+        <div class="budget">Ngân sách</div>
+      </a>
+      <a href="../them-giao-dich/index.html" class="frame-5">
+        <img class="icon-adauga" src="./assets/icon-adauga0.svg" />
+        <div class="add">Thêm</div>
+      </a>
+      <a href="../loi-khuyen/index.html" class="frame-6">
+        <img class="icon-educatie" src="./assets/icon-educatie0.svg" />
+        <div class="advice">Lời khuyên</div>
+      </a>
+      <a href="../khac/index.html" class="frame-7">
+        <img class="icon-more" src="assets/more.svg" alt="More" />
+        <span class="more">Khác</span>
+      </a>
+    </div>
+  </div>
+  
+</body>
+</html>
+<script>
+  document.getElementById('admin').addEventListener('change', function() {
+    const checkboxes = document.querySelectorAll('.permission-checkbox');
+    if (this.checked) {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = true;
+      });
+    }
+  });
+</script>
