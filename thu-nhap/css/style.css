@@ -134,3 +134,29 @@
   line-height: 16px;
   letter-spacing: 0.4px;
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+ 
+.icon-search,
+.icon-notification {
+  width: 25.51px; /* Bằng với line-height của chữ Tổng Quan */
+  height: 25.51px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+ 
+/* Điều chỉnh lại vị trí của header-right để căn chỉnh với chữ Tổng Quan */
+.header-right {
+  bottom: 20.69%;
+  top: 49.43%;
+  height: 29.89%;
+}
+ 
