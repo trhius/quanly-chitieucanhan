@@ -1731,3 +1731,24 @@
   line-height: 16px;
   letter-spacing: 0.4px;
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-search,
+.icon-notification {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.header-navigation {
+  position: relative;
+}
