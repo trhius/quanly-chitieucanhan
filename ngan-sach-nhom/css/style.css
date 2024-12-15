@@ -125,6 +125,7 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  z-index: 1000;
 }
 .ellipse-102 {
   background: var(--material-theme-sys-light-on-primary, #ffffff);
