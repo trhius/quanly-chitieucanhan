@@ -611,3 +611,7 @@
 .button-navigation-conturi3.active div {
   color: var(--material-theme-sys-light-on-primary, #ffffff);
 }
+.category-button.active {
+  font-weight: bold;
+  font-size: 26px;
+}
