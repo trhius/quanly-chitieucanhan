@@ -34,6 +34,71 @@
        margin: 0;
        padding: 0;
    }
+
+   .category-icon {
+       transition: all 0.2s ease;
+       cursor: pointer;
+       padding: 8px;
+       border-radius: 50%;
+   }
+   
+   .category-icon:active {
+       transform: scale(0.95);
+       background-color: rgba(0, 0, 0, 0.1);
+   }
+   
+   .category-icon.selected {
+       background-color: rgba(0, 0, 0, 0.08);
+   }
+   
+   .category-icon.selected svg {
+       transform: scale(1.1);
+   }
+   
+   .category-icon.selected path {
+       stroke-width: 2;
+   }
+   
+   .danh-muc {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(2, 1fr);
+       gap: 20px;
+       padding: 20px;
+       max-width: 320px;
+       margin: 0 auto;
+   }
+   
+   .category-icon {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+       margin: 0 auto;
+   }
+   
+   .category-icon img {
+       width: 24px;
+       height: 24px;
+   }
+   
+   .category-icon:nth-child(1) { border: 1.5px solid #FF8C21; }
+   .category-icon:nth-child(2) { border: 1.5px solid #50D244; }
+   .category-icon:nth-child(3) { border: 1.5px solid #0076E3; }
+   .category-icon:nth-child(4) { border: 1.5px solid #1CA380; }
+   .category-icon:nth-child(5) { border: 1.5px solid #A854EA; }
+   .category-icon:nth-child(6) { border: 1.5px solid #FF4181; }
+   .category-icon:nth-child(7) { border: 1.5px solid #5E957D; }
+   .category-icon:nth-child(8) { border: 1.5px solid #FF5843; }
+   
+   .danh-muc-title {
+       font-size: 16px;
+       color: #444745;
+       margin-bottom: 16px;
+       padding-left: 20px;
+   }
    </style>
   <title>Document</title>
 </head>
@@ -68,26 +133,30 @@
     </div>
     <div class="frame-236">
       <div class="danh-m-c">Danh mục</div>
-      <div class="group-99">
-        <div class="icon-car-circle">
-          <img class="icon-car" src="./assets/icon-car0.svg" />
+      <div class="danh-muc">
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-car0.svg" alt="Transport" />
         </div>
-        <img class="icon-food-circle" src="./assets/icon-food-circle0.svg" />
-        <img class="icon-gift-circle" src="./assets/icon-gift-circle0.svg" />
-        <div class="icon-health-circle">
-          <img class="icon-health" src="./assets/icon-health0.svg" />
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-food-circle0.svg" alt="Food" />
         </div>
-        <div class="icon-home-circle">
-          <img class="icon-home" src="./assets/icon-home0.svg" />
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-gift-circle0.svg" alt="Gift" />
         </div>
-        <div class="icon-clothes-circle">
-          <img class="icon-clothes" src="./assets/icon-clothes0.svg" />
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-health0.svg" alt="Health" />
         </div>
-        <div class="icon-donation-circle">
-          <img class="icon-donation" src="./assets/icon-donation0.svg" />
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-clothes0.svg" alt="Clothes" />
         </div>
-        <div class="icon-beauty-cicle">
-          <img class="icon-beauty" src="./assets/icon-beauty0.svg" />
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-beauty0.svg" alt="Beauty" />
+        </div>
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-donation0.svg" alt="Donation" />
+        </div>
+        <div class="category-icon" onclick="selectCategory(this)">
+          <img src="./assets/icon-home0.svg" alt="Home" />
         </div>
       </div>
     </div>
@@ -134,7 +203,7 @@
     </div>
   </div>
   
-  <script>
+  <!-- <script>
   function selectAccount(element) {
     // Remove active class and icon-check from all buttons
     document.querySelectorAll('.button-navigation-conturi, .button-navigation-conturi2, .button-navigation-conturi3')
@@ -157,6 +226,40 @@
       element.insertBefore(checkIcon, element.firstChild);
     }
   }
-  </script>
+  </script> -->
+  <script>
+    function selectAccount(element) {
+      // Remove active class and icon-check from all buttons
+      document.querySelectorAll('.button-navigation-conturi, .button-navigation-conturi2, .button-navigation-conturi3')
+        .forEach(btn => {
+          btn.classList.remove('active');
+          const checkIcon = btn.querySelector('.icon-check');
+          if (checkIcon) {
+            checkIcon.remove();
+          }
+        });
+      
+      // Add active class to clicked button
+      element.classList.add('active');
+      
+      // Add check icon to active button
+      if (!element.querySelector('.icon-check')) {
+        const checkIcon = document.createElement('img');
+        checkIcon.className = 'icon-check';
+        checkIcon.src = './assets/icon-check0.svg';
+        element.insertBefore(checkIcon, element.firstChild);
+      }
+    }
+    
+    function selectCategory(element) {
+      // Xóa class selected từ tất cả các icon
+      document.querySelectorAll('.category-icon').forEach(icon => {
+          icon.classList.remove('selected');
+      });
+      
+      // Thêm class selected vào icon được chọn
+      element.classList.add('selected');
+    }
+    </script>
 </body>
 </html>
