@@ -163,27 +163,35 @@
   top: 0%;
 }
 .frame-88 {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  gap: 32px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
+  padding: 12px 16px;
   width: 212px;
   position: absolute;
   left: calc(50% - 191px);
   top: calc(50% - 0px);
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+.icon-search,
+.icon-notification {
+  width: 25.51px;
+  height: 25.51px;
+  cursor: pointer;
+}
 .pagina-principal {
-  color: var(--material-theme-sys-light-on-primary-container, #002117);
+  color: var(--material-theme-sys-light-on-surface, #191C1A);
   text-align: left;
-  font-family: var(
-    --typography-title-medium-font-family,
-    "Roboto-Medium",
-    sans-serif
-  );
-  font-size: var(--typography-title-medium-font-size, 20px);
-  line-height: var(--typography-title-medium-line-height, 28px);
-  font-weight: var(--typography-title-medium-font-weight, 500);
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
   position: relative;
 }
 .status-bar {

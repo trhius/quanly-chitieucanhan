@@ -629,3 +629,25 @@
   font-weight: bold;
   font-size: 26px;
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 20.69%;
+  top: 49.43%;
+  height: 29.89%;
+  z-index: 10;
+}
+
+.icon-search,
+.icon-notification {
+  width: 25.51px;
+  height: 25.51px;
+  cursor: pointer;
+  margin-top: 20px;
+}

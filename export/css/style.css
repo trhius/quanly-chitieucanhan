@@ -161,3 +161,15 @@
   width: 24px;
   height: 24px;
 }
+
+.header-right {
+  position: absolute;
+  right: 16px;
+  top: 45px;
+}
+
+.icon-notification {
+  width: 25.51px;
+  height: 25.51px;
+  cursor: pointer;
+}

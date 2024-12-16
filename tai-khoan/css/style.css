@@ -497,3 +497,17 @@
   line-height: 16px;
   letter-spacing: 0.4px;
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 16px;
+  top: 50px;
+}
+.icon-search,
+.icon-notification {
+  width: 25.51px;
+  height: 25.51px;
+  cursor: pointer;
+}
