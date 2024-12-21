@@ -170,3 +170,35 @@ body {
 .image-5 {
   margin-bottom: 60px;
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.popup-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.popup p {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+}

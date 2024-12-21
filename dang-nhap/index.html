@@ -37,7 +37,7 @@
           <div class="error-message">Mật khẩu phải có ít nhất 6 ký tự</div>
         </div>
         
-        <button type="button" class="button" onclick="window.location.href='../tong-quan/index.html'">
+        <button type="button" class="button" onclick="showLoginPopup()">
           <div class="label3">Đăng nhập</div>
         </button>
       </form>
@@ -68,6 +68,24 @@
     <div class="loader"></div>
   </div>
 
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <img src="assets/icons/success.svg" alt="Success" class="popup-icon">
+      <p>Đăng nhập thành công!</p>
+    </div>
+  </div>
+
   <script type="module" src="js/main.js"></script>
+  <script>
+  function showLoginPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    
+    // Tự động chuyển trang sau 2 giây
+    setTimeout(() => {
+      window.location.href = '../tong-quan/index.html';
+    }, 2000);
+  }
+  </script>
 </body>
 </html>

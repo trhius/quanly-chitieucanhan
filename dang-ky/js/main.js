@@ -53,11 +53,29 @@ class RegisterForm {
     showLoading(this.loadingOverlay);
 
     try {
-      // TODO: Implement API call to register user
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      // Lấy thông tin từ form
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const name = document.getElementById('name').value;
+
+      // Lưu thông tin vào localStorage
+      const users = JSON.parse(localStorage.getItem('users') || '[]');
+      users.push({
+        email,
+        password,
+        name
+      });
+      localStorage.setItem('users', JSON.stringify(users));
       
-      // Redirect to login page after successful registration
-      window.location.href = '../dang-nhap/index.html';
+      // Show success popup
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+      
+      // Redirect after 2 seconds
+      setTimeout(() => {
+        window.location.href = '../dang-nhap/index.html';
+      }, 2000);
+
     } catch (error) {
       console.error('Registration failed:', error);
     } finally {
