@@ -267,3 +267,10 @@
   line-height: 16px;
   letter-spacing: 0.4px;
 }
+.menu-bottom a {
+  color: var(--material-theme-sys-light-outline, #707974); /* Màu mặc định */
+}
+
+.menu-bottom a.active {
+  color: var(--material-theme-sys-light-on-primary-container, #002117); /* Màu khi active */
+}
