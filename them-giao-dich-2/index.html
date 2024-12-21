@@ -180,8 +180,8 @@
         </div>
       </div>
     </div>
-    <div class="button-primary-conect">
-      <a href="../tong-quan/index.html" class="conectare">Xác nhận</a>
+    <div class="button-primary-conect" onclick="showSuccessPopup()">
+      <div class="conectare">Xác nhận</div>
     </div>
     <div class="menu-bottom">
       <a href="../tong-quan/index.html" class="frame-3">
@@ -256,14 +256,45 @@
     }
     
     function selectCategory(element) {
-      // Xóa class selected từ tất cả các icon
+      // Remove selected class from all category icons
       document.querySelectorAll('.category-icon').forEach(icon => {
-          icon.classList.remove('selected');
+        icon.classList.remove('selected');
       });
       
-      // Thêm class selected vào icon được chọn
+      // Add selected class to clicked icon
       element.classList.add('selected');
     }
     </script>
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <div class="popup-icon">✓</div>
+      <div class="popup-message">Thêm thu nhập thành công!</div>
+    </div>
+  </div>
+  <script>
+    function showSuccessPopup() {
+      // Show overlay and popup
+      document.getElementById('overlay').classList.add('show');
+      document.getElementById('successPopup').classList.add('show');
+
+      // Hide popup after 2 seconds
+      setTimeout(() => {
+        document.getElementById('overlay').classList.remove('show');
+        document.getElementById('successPopup').classList.remove('show');
+        
+        // Optional: Redirect or reset form after showing popup
+        // window.location.href = 'next-page.html';
+        // or
+        // resetForm();
+      }, 2000);
+    }
+
+    // Optional: Close popup when clicking overlay
+    document.getElementById('overlay').addEventListener('click', () => {
+      document.getElementById('overlay').classList.remove('show');
+      document.getElementById('successPopup').classList.remove('show');
+    });
+  </script>
 </body>
 </html>

@@ -651,3 +651,112 @@
   cursor: pointer;
   margin-top: 20px;
 }
+
+/* Thêm styles cho button khi được chọn */
+.button-navigation-conturi.active,
+.button-navigation-conturi2.active,
+.button-navigation-conturi3.active {
+  background: var(--material-theme-sys-light-secondary, #006492);
+}
+
+.button-navigation-conturi.active .mb,
+.button-navigation-conturi2.active .ti-n-m-t {
+  color: #FFFFFF;
+}
+
+/* Style cho icon check */
+.icon-check {
+  width: 17px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* Style cho category icons */
+.category-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.category-icon.selected {
+  transform: scale(1.1);
+}
+
+.category-icon:hover {
+  transform: scale(1.05);
+}
+
+/* Thêm hiệu ứng hover cho các buttons */
+.button-navigation-conturi:hover,
+.button-navigation-conturi2:hover,
+.button-navigation-conturi3:hover {
+  background: rgba(0, 100, 146, 0.1);
+}
+
+/* Thêm transition cho smooth effect */
+.button-navigation-conturi,
+.button-navigation-conturi2,
+.button-navigation-conturi3 {
+  transition: all 0.3s ease;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+  text-align: center;
+  min-width: 300px;
+}
+
+.popup.show {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+  margin-bottom: 20px;
+}
+
+.popup-icon {
+  color: #50D244;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.popup-message {
+  color: #333;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.overlay.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -51,7 +51,7 @@
         <img src="./assets/group0.svg" alt="Export illustration" />
       </div>
 
-      <a href="../khac/index.html" class="button-primary">
+      <a href="#" class="button-primary" onclick="showSuccessPopup(); return false;">
         <div class="button-text">Xác nhận</div>
       </a>
     </div>
@@ -81,6 +81,14 @@
     </div>
   </div>
 
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <div class="popup-icon">✓</div>
+      <div class="popup-message">Xuất dữ liệu thành công!</div>
+    </div>
+  </div>
+
   <script>
   function setActiveButton(clickedButton) {
     // Remove active class from all buttons
@@ -91,6 +99,29 @@
     // Add active class to clicked button
     clickedButton.classList.add('active');
   }
+
+  function showSuccessPopup() {
+    // Show overlay and popup
+    document.getElementById('overlay').classList.add('show');
+    document.getElementById('successPopup').classList.add('show');
+
+    // Hide popup after 2 seconds
+    setTimeout(() => {
+      document.getElementById('overlay').classList.remove('show');
+      document.getElementById('successPopup').classList.remove('show');
+      
+      // Redirect after popup closes
+      setTimeout(() => {
+        window.location.href = '../khac/index.html';
+      }, 300);
+    }, 2000);
+  }
+
+  // Optional: Close popup when clicking overlay
+  document.getElementById('overlay').addEventListener('click', () => {
+    document.getElementById('overlay').classList.remove('show');
+    document.getElementById('successPopup').classList.remove('show');
+  });
   </script>
 </body>
 </html>

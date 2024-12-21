@@ -104,6 +104,12 @@
 </head>
 <body>
   <div class="th-m-giao-d-ch">
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <img src="./assets/icon-check0.svg" alt="Success" class="success-icon">
+        <p>Thêm chi tiêu mới thành công!</p>
+      </div>
+    </div>
     <div class="frame-35041">
       <div class="frame-35040">
         <div class="frame-91">
@@ -130,9 +136,9 @@
         </div>
       </div>
     </div>
-    <a href="../tong-quan/index.html" class="button-primary-conect">
+    <button class="button-primary-conect" onclick="handleConfirm()">
       <div class="conectare">Xác nhận</div>
-    </a>
+    </button>
     <div class="frame-236">
       <div class="danh-m-c">Danh mục</div>
       <div class="danh-muc">
@@ -237,6 +243,18 @@
     
     // Thêm class selected vào icon được chọn
     element.classList.add('selected');
+  }
+  
+  function handleConfirm() {
+    // Hiển thị modal
+    const modal = document.getElementById('successModal');
+    modal.style.display = 'flex';
+
+    // Sau 2 giây, ẩn modal và chuyển trang
+    setTimeout(() => {
+      modal.style.display = 'none';
+      window.location.href = '../tong-quan/index.html';
+    }, 2000);
   }
   </script>
   
