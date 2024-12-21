@@ -10,82 +10,80 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="ng-nh-p">
-    <img class="image-6" src="assets/images/image-60.png" alt="Logo" />
-    
-    <div class="ng-nh-p2">Đăng nhập</div>
-    
-    <div class="frame-35034">
-      <form id="loginForm">
-        <div class="input">
-          <div class="text">
-            <div class="label">Email</div>
-          </div>
-          <input type="email" class="input2" name="email" required placeholder="Nhập email của bạn">
-        </div>
+    <div class="ng-nh-p">
+        <img class="image-6" src="assets/images/image-60.png" alt="Logo" />
         
-        <div class="input">
-          <div class="text">
-            <div class="label">Mật khẩu</div>
-          </div>
-          <div class="password-wrapper">
-            <input type="password" class="password-input" name="password" required placeholder="Nhập mật khẩu">
-            <button type="button" class="icon-solid-eye-off">
-              <img class="eye-closed" src="assets/icons/group0.svg" alt="hide password" />
-            </button>
-          </div>
-          <div class="error-message">Mật khẩu phải có ít nhất 6 ký tự</div>
-        </div>
+        <div class="ng-nh-p2">Đăng nhập</div>
         
-        <button type="button" class="button" onclick="showLoginPopup()">
-          <div class="label3">Đăng nhập</div>
-        </button>
-      </form>
-    </div>
-
-    <div class="frame-35033">
-      <div class="label4">Đăng nhập bằng</div>
-      <div class="frame-218">
-        <div class="frame-174" data-social="google">
-          <img class="icon-google" src="assets/icons/icon-google0.svg" alt="Google" />
+        <div class="frame-35034">
+            <form id="loginForm">
+                <div class="input">
+                    <div class="text">
+                        <div class="label">Email</div>
+                    </div>
+                    <input type="email" class="input2" name="email" required placeholder="Nhập email của bạn">
+                </div>
+                
+                <div class="input">
+                    <div class="text">
+                        <div class="label">Mật khẩu</div>
+                    </div>
+                    <div class="password-wrapper">
+                        <input type="password" class="password-input" name="password" required placeholder="Nhập mật khẩu">
+                        <button type="button" class="icon-solid-eye-off">
+                            <img class="eye-closed" src="assets/icons/group0.svg" alt="hide password" />
+                        </button>
+                    </div>
+                    <div class="error-message">Mật khẩu phải có ít nhất 6 ký tự</div>
+                </div>
+                
+                <button type="submit" class="button">
+                    <div class="label3">Đăng nhập</div>
+                </button>
+            </form>
         </div>
-        <div class="frame-174" data-social="facebook">
-          <img class="icon-facebook" src="assets/icons/icon-facebook0.svg" alt="Facebook" />
+
+        <div class="frame-35033">
+            <div class="label4">Đăng nhập bằng</div>
+            <div class="frame-218">
+                <div class="frame-174" data-social="google">
+                    <img class="icon-google" src="assets/icons/icon-google0.svg" alt="Google" />
+                </div>
+                <div class="frame-174" data-social="facebook">
+                    <img class="icon-facebook" src="assets/icons/icon-facebook0.svg" alt="Facebook" />
+                </div>
+                <div class="frame-1742" data-social="twitter">
+                    <img class="mdi-twitter" src="assets/icons/mdi-twitter0.svg" alt="Twitter" />
+                </div>
+            </div>
         </div>
-        <div class="frame-1742" data-social="twitter">
-          <img class="mdi-twitter" src="assets/icons/mdi-twitter0.svg" alt="Twitter" />
+
+        <div class="frame-35032">
+            <div class="n-u-b-n-ch-a-c-t-i-kho-n">Nếu bạn chưa có tài khoản</div>
+            <a href="../dang-ky/index.html" class="ng-k">Đăng ký</a>
         </div>
-      </div>
     </div>
 
-    <div class="frame-35032">
-      <div class="n-u-b-n-ch-a-c-t-i-kho-n">Nếu bạn chưa có tài khoản</div>
-      <a href="../dang-ky/index.html" class="ng-k">Đăng ký</a>
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loader"></div>
     </div>
-  </div>
 
-  <div id="loadingOverlay" class="loading-overlay">
-    <div class="loader"></div>
-  </div>
-
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <img src="assets/icons/success.svg" alt="Success" class="popup-icon">
-      <p>Đăng nhập thành công!</p>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="assets/icons/success.svg" alt="Success" class="popup-icon">
+            <p>Đăng nhập thành công!</p>
+        </div>
     </div>
-  </div>
 
-  <script type="module" src="js/main.js"></script>
-  <script>
-  function showLoginPopup() {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'block';
-    
-    // Tự động chuyển trang sau 2 giây
-    setTimeout(() => {
-      window.location.href = '../tong-quan/index.html';
-    }, 2000);
-  }
-  </script>
+    <div class="popup" id="failurePopup">
+        <div class="popup-content">
+            <div class="popup-icon">✕</div>
+            <div class="popup-message">Email hoặc mật khẩu không chính xác!</div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

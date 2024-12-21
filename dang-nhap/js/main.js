@@ -1,40 +1,96 @@
-handleSubmit = async (e) => {
+document.addEventListener('DOMContentLoaded', () => {
+  // Xử lý form submit
+  const loginForm = document.querySelector('form');
+  if (loginForm) {
+    loginForm.addEventListener('submit', handleSubmit);
+  }
+
+  // Xử lý toggle password
+  const eyeIcon = document.querySelector('.icon-solid-eye-off');
+  if (eyeIcon) {
+    eyeIcon.addEventListener('click', togglePassword);
+  }
+});
+
+function handleSubmit(e) {
   e.preventDefault();
-
-  if (!this.validateForm()) return;
-
-  showLoading(this.loadingOverlay);
-
-  try {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    // Lấy danh sách users từ localStorage
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
+  console.log('Form submitted');
+  
+  const email = document.querySelector('input[type="email"]').value.trim();
+  const password = document.querySelector('input[type="password"], input[type="text"]').value.trim();
+  
+  console.log('Credentials:', { email, password });
+  
+  // Validate form
+  if (!email || !password) {
+    console.log('Empty fields detected');
+    showFailurePopup('Vui lòng nhập đầy đủ thông tin');
+    clearPasswordInput();
+    return;
+  }
+  
+  // Kiểm tra thông tin đăng nhập với tài khoản mặc định
+  if (email === 'admin@gmail.com' && password === '123456') {
+    console.log('Login successful');
+    // Đăng nhập thành công
+    const successPopup = document.getElementById('popup');
     
-    // Tìm user với email và password khớp
-    const user = users.find(u => u.email === email && u.password === password);
-
-    if (user) {
-      // Lưu thông tin user đang đăng nhập
-      localStorage.setItem('currentUser', JSON.stringify(user));
+    if (successPopup) {
+      // Ẩn loader nếu có
+      const loader = document.querySelector('.loader');
+      if (loader) {
+        loader.style.display = 'none';
+      }
       
-      // Hiển thị popup thành công
-      const popup = document.getElementById('popup');
-      popup.style.display = 'block';
+      successPopup.style.display = 'block';
       
-      // Chuyển hướng sau 2 giây
+      // Chuyển hướng sau 1 giây
       setTimeout(() => {
         window.location.href = '../tong-quan/index.html';
-      }, 2000);
-    } else {
-      // Hiển thị thông báo lỗi
-      alert('Email hoặc mật khẩu không chính xác!');
+      }, 1000);
     }
+  } else {
+    console.log('Login failed');
+    // Đăng nhập thất bại
+    showFailurePopup('Email hoặc mật khẩu không chính xác');
+    clearPasswordInput();
+  }
+}
 
-  } catch (error) {
-    console.error('Login failed:', error);
-  } finally {
-    hideLoading(this.loadingOverlay);
+function showFailurePopup(message) {
+  const failurePopup = document.getElementById('failurePopup');
+  
+  if (failurePopup) {
+    // Cập nhật nội dung thông báo nếu cần
+    const messageElement = failurePopup.querySelector('.popup-message');
+    if (messageElement) {
+      messageElement.textContent = message;
+    }
+    
+    // Hiển thị popup
+    failurePopup.style.display = 'block';
+    
+    // Tự động ẩn sau 1 giây
+    setTimeout(() => {
+      failurePopup.style.display = 'none';
+    }, 1000);
+  }
+}
+
+// Hàm clear input mật khẩu
+function clearPasswordInput() {
+  const passwordInput = document.querySelector('input[type="password"], input[type="text"]');
+  if (passwordInput) {
+    passwordInput.value = '';
+    // Đảm bảo type là password khi clear
+    passwordInput.type = 'password';
+  }
+}
+
+// Toggle hiển thị mật khẩu
+function togglePassword() {
+  const passwordInput = document.querySelector('input[type="password"], input[type="text"]');
+  if (passwordInput) {
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
   }
 }

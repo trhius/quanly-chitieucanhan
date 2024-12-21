@@ -328,3 +328,16 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+
+/* Thêm style cho popup thất bại */
+#failurePopup .popup-icon {
+  color: #FF4444;  /* Màu đỏ cho icon thất bại */
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#failurePopup .popup-message {
+  color: #333;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+}
