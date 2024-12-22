@@ -743,3 +743,11 @@
   top: 49.43%;
   height: 29.89%;
 }
+
+.positive-transaction {
+  color: var(--primary-60, #18a381);
+}
+
+.negative-transaction {
+  color: var(--cont-orange-50, #fc2525);
+}
