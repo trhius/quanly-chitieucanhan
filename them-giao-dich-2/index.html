@@ -1,107 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/vars.css">
   <link rel="stylesheet" href="./css/style.css">
-  
-  
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
 
-   .category-icon {
-       transition: all 0.2s ease;
-       cursor: pointer;
-       padding: 8px;
-       border-radius: 50%;
-   }
-   
-   .category-icon:active {
-       transform: scale(0.95);
-       background-color: rgba(0, 0, 0, 0.1);
-   }
-   
-   .category-icon.selected {
-       background-color: rgba(0, 0, 0, 0.08);
-   }
-   
-   .category-icon.selected svg {
-       transform: scale(1.1);
-   }
-   
-   .category-icon.selected path {
-       stroke-width: 2;
-   }
-   
-   .danh-muc {
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-       grid-template-rows: repeat(2, 1fr);
-       gap: 20px;
-       padding: 20px;
-       max-width: 320px;
-       margin: 0 auto;
-   }
-   
-   .category-icon {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 50px;
-       height: 50px;
-       border-radius: 50%;
-       margin: 0 auto;
-   }
-   
-   .category-icon img {
-       width: 24px;
-       height: 24px;
-   }
-   
-   .category-icon:nth-child(1) { border: 1.5px solid #FF8C21; }
-   .category-icon:nth-child(2) { border: 1.5px solid #50D244; }
-   .category-icon:nth-child(3) { border: 1.5px solid #0076E3; }
-   .category-icon:nth-child(4) { border: 1.5px solid #1CA380; }
-   .category-icon:nth-child(5) { border: 1.5px solid #A854EA; }
-   .category-icon:nth-child(6) { border: 1.5px solid #FF4181; }
-   .category-icon:nth-child(7) { border: 1.5px solid #5E957D; }
-   .category-icon:nth-child(8) { border: 1.5px solid #FF5843; }
-   
-   .danh-muc-title {
-       font-size: 16px;
-       color: #444745;
-       margin-bottom: 16px;
-       padding-left: 20px;
-   }
-   </style>
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .category-icon {
+      transition: all 0.2s ease;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+    }
+
+    .category-icon:active {
+      transform: scale(0.95);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .category-icon.selected {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .category-icon.selected svg {
+      transform: scale(1.1);
+    }
+
+    .category-icon.selected path {
+      stroke-width: 2;
+    }
+
+    .danh-muc {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .category-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    .category-icon img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .category-icon:nth-child(1) {
+      border: 1.5px solid #FF8C21;
+    }
+
+    .category-icon:nth-child(2) {
+      border: 1.5px solid #50D244;
+    }
+
+    .category-icon:nth-child(3) {
+      border: 1.5px solid #0076E3;
+    }
+
+    .category-icon:nth-child(4) {
+      border: 1.5px solid #1CA380;
+    }
+
+    .category-icon:nth-child(5) {
+      border: 1.5px solid #A854EA;
+    }
+
+    .category-icon:nth-child(6) {
+      border: 1.5px solid #FF4181;
+    }
+
+    .category-icon:nth-child(7) {
+      border: 1.5px solid #5E957D;
+    }
+
+    .category-icon:nth-child(8) {
+      border: 1.5px solid #FF5843;
+    }
+
+    .danh-muc-title {
+      font-size: 16px;
+      color: #444745;
+      margin-bottom: 16px;
+      padding-left: 20px;
+    }
+  </style>
   <title>Document</title>
 </head>
+
 <body>
   <div class="th-m-giao-d-ch">
     <img class="vector-22" src="./assets/vector-220.svg" />
@@ -183,6 +210,18 @@
     <div class="button-primary-conect" onclick="showSuccessPopup()">
       <div class="conectare">Xác nhận</div>
     </div>
+    <div class="frame-doi-tuong-container">
+      <div class="doi-tuong-label">Đối tượng</div>
+      <div class="frame-94">
+        <div class="button-navigation-conturi active" onclick="selectDoiTuong(this)">
+          <img class="icon-check" src="./assets/icon-check0.svg" />
+          <div class="tcb">Cá nhân</div>
+        </div>
+        <div class="button-navigation-conturi2" onclick="selectDoiTuong(this)">
+          <div class="mb">Nhóm</div>
+        </div>
+      </div>
+    </div>
     <div class="menu-bottom">
       <a href="../tong-quan/index.html" class="frame-3">
         <img class="icon-dashboard" src="./assets/icon-dashboard0.svg" />
@@ -206,7 +245,7 @@
       </a>
     </div>
   </div>
-  
+
   <!-- <script>
   function selectAccount(element) {
     // Remove active class and icon-check from all buttons
@@ -242,10 +281,10 @@
             checkIcon.remove();
           }
         });
-      
+
       // Add active class to clicked button
       element.classList.add('active');
-      
+
       // Add check icon to active button
       if (!element.querySelector('.icon-check')) {
         const checkIcon = document.createElement('img');
@@ -254,17 +293,17 @@
         element.insertBefore(checkIcon, element.firstChild);
       }
     }
-    
+
     function selectCategory(element) {
       // Remove selected class from all category icons
       document.querySelectorAll('.category-icon').forEach(icon => {
         icon.classList.remove('selected');
       });
-      
+
       // Add selected class to clicked icon
       element.classList.add('selected');
     }
-    </script>
+  </script>
   <div class="overlay" id="overlay"></div>
   <div class="popup" id="successPopup">
     <div class="popup-content">
@@ -282,7 +321,7 @@
       setTimeout(() => {
         document.getElementById('overlay').classList.remove('show');
         document.getElementById('successPopup').classList.remove('show');
-        
+
         // Optional: Redirect or reset form after showing popup
         // window.location.href = 'next-page.html';
         // or
@@ -295,6 +334,29 @@
       document.getElementById('overlay').classList.remove('show');
       document.getElementById('successPopup').classList.remove('show');
     });
+    function selectDoiTuong(element) {
+      // Remove active class and icon-check from all buttons
+      document.querySelectorAll('.frame-doi-tuong-container .button-navigation-conturi, .frame-doi-tuong-container .button-navigation-conturi2')
+        .forEach(btn => {
+          btn.classList.remove('active');
+          const checkIcon = btn.querySelector('.icon-check');
+          if (checkIcon) {
+            checkIcon.remove();
+          }
+        });
+
+      // Add active class to clicked button
+      element.classList.add('active');
+
+      // Add check icon to active button
+      if (!element.querySelector('.icon-check')) {
+        const checkIcon = document.createElement('img');
+        checkIcon.className = 'icon-check';
+        checkIcon.src = './assets/icon-check0.svg';
+        element.insertBefore(checkIcon, element.firstChild);
+      }
+    }
   </script>
 </body>
+
 </html>

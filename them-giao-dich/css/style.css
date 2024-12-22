@@ -196,6 +196,7 @@
   position: absolute;
   left: 54px;
   bottom: 131px;
+  top: 640px;
 }
 .conectare {
   color: var(--neutral-white-fff, #ffffff);
@@ -666,4 +667,32 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.frame-doi-tuong-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 317px;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 360px;  /* Điều chỉnh vị trí giữa "Từ tài khoản" và "Danh mục" */
+}
+
+.doi-tuong-label {
+  color: var(--neutral-grey-50, #747875);
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Điều chỉnh lại vị trí của frame-236 (Danh mục) */
+.frame-236 {
+  top: 432px; /* Điều chỉnh vị trí xuống dưới phần Đối tượng */
 }

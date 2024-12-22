@@ -660,7 +660,7 @@
   height: 312.06px;
   position: absolute;
   left: 17px;
-  top: 613.33px;
+  top:590px;
   box-shadow: var(--m-box-shadow, 0px 1px 3px 0px rgba(0, 0, 0, 0.25));
 }
 .s-d {
@@ -1756,3 +1756,72 @@
   top: 49.43%;
   height: 29.89%;
 }
+
+.notification-tab {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 8px;
+  z-index: 1000;
+}
+
+.notification-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #E9EBE9;
+}
+
+.notification-title {
+  color: #404944;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.notification-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  display: flex;
+  padding: 12px 16px;
+  gap: 12px;
+  border-bottom: 1px solid #E9EBE9;
+  cursor: pointer;
+}
+
+.notification-item:hover {
+  background: #F9FBF8;
+}
+
+.notification-item .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-content .title {
+  color: #404944;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.notification-content .date {
+  color: #8E928F;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+}
+
+/* Thêm position: relative cho header-right để làm điểm neo cho notification-tab */
+/* .header-right {
+  position: relative;
+} */

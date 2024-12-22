@@ -523,6 +523,7 @@
   position: absolute;
   left: 27px;
   top: 460px;
+  padding-bottom: 50px;
 }
 .card-obiective-familie-default {
   background: var(--neutral-white-fff, #ffffff);

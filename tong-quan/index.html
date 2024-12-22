@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/vars.css">
   <link rel="stylesheet" href="./css/style.css">
-  
-  
+
+
   <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
   <title>Document</title>
 </head>
+
 <body>
   <div class="t-ng-quan">
     <div class="frame-33">
@@ -244,6 +248,35 @@
       <div class="header-right">
         <img class="icon-search" src="./assets/icon-search.svg" alt="Search" />
         <img class="icon-notification" src="./assets/icon-notification.svg" alt="Notification" />
+        <!-- Thêm vào sau dòng 247, trong div.header-right -->
+        <div class="notification-tab" id="notificationTab" style="display: none;">
+          <div class="notification-header">
+            <div class="notification-title">Thông báo</div>
+          </div>
+          <div class="notification-list">
+            <div class="notification-item">
+              <img class="avatar" src="./assets/image/ellipse-100.png" />
+              <div class="notification-content">
+                <div class="title">Hiếu gớp quỹ tiết kiệm</div>
+                <div class="date">12 February 2022</div>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img class="avatar" src="./assets/image/ellipse-101.png" />
+              <div class="notification-content">
+                <div class="title">Đoàn thanh toán điện</div>
+                <div class="date">12 February 2022</div>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img class="avatar" src="./assets/image/ellipse-102.png" />
+              <div class="notification-content">
+                <div class="title">Bạn quá hạn thanh toán tiền trọ</div>
+                <div class="date">12 February 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="menu-bottom">
@@ -269,6 +302,27 @@
       </a>
     </div>
   </div>
-  
+
+  // Thêm vào cuối file index.html, trước
 </body>
+<script>
+  const notificationIcon = document.querySelector('.icon-notification');
+  const notificationTab = document.getElementById('notificationTab');
+
+  notificationIcon.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isVisible = notificationTab.style.display === 'block';
+    notificationTab.style.display = isVisible ? 'none' : 'block';
+  });
+
+  // Đóng notification tab khi click ra ngoài
+  document.addEventListener('click', (e) => {
+    if (!notificationTab.contains(e.target) && e.target !== notificationIcon) {
+      notificationTab.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+
 </html>
