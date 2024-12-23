@@ -255,6 +255,20 @@
     </div>
   </div>
 
+  <div id="confirmPopup" class="popup">
+    <div class="popup-content">
+      <div class="popup-title">WARNING</div>
+      <div class="popup-message">
+        Bạn có muốn rời khỏi trang này không?<br>
+        Các thay đổi sẽ không được lưu lại.
+      </div>
+      <div class="popup-buttons">
+        <button id="stayButton" class="btn-cancel">Huỷ</button>
+        <button id="leaveButton" class="btn-confirm">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     function selectAccount(element) {
       // Remove active class and icon-check from all buttons
@@ -323,6 +337,44 @@
         element.insertBefore(checkIcon, element.firstChild);
       }
     }
+
+    let hasChanges = false;
+    const popup = document.getElementById('confirmPopup');
+    const stayButton = document.getElementById('stayButton');
+    const leaveButton = document.getElementById('leaveButton');
+    let nextPageUrl = '';
+
+    // Theo dõi thay đổi trong form
+    document.addEventListener('input', () => {
+        hasChanges = true;
+    });
+
+    // Xử lý khi click vào các link navigation
+    document.querySelectorAll('.frame-3, .frame-4, .frame-5, .frame-6, .frame-7').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (hasChanges) {
+                e.preventDefault();
+                nextPageUrl = e.currentTarget.getAttribute('href');
+                popup.style.display = 'block';
+            }
+        });
+    });
+
+    // Xử lý nút "Ở lại trang"
+    stayButton.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // Xử lý nút "Rời khỏi"
+    leaveButton.addEventListener('click', () => {
+        hasChanges = false;
+        window.location.href = nextPageUrl;
+    });
+
+    // Reset trạng thái khi form được submit thành công
+    document.querySelector('form').addEventListener('submit', () => {
+        hasChanges = false;
+    });
   </script>
 
 </body>
