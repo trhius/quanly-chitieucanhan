@@ -141,7 +141,15 @@
       <div class="frame-35040">
         <div class="frame-91">
           <div class="_890-000">
-            <input type="number" class="amount-input" placeholder="0" />
+            <input 
+              class="amount-input"
+              type="text"
+              id="amount"
+              onkeypress="return isNumberKey(event)"
+              oninput="validateNumber(this)"
+              maxlength="15"
+              placeholder="0"
+            />
           </div>
           <!-- <div class="vector-27"></div> -->
         </div>
@@ -317,6 +325,52 @@
         checkIcon.src = './assets/icon-check0.svg';
         element.insertBefore(checkIcon, element.firstChild);
       }
+    }
+
+    function isNumberKey(evt) {
+      const charCode = (evt.which) ? evt.which : evt.keyCode;
+      if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode !== 46) {
+        return false;
+      }
+      return true;
+    }
+
+    function validateNumber(input) {
+      let value = input.value.replace(/[^\d]/g, '');
+      
+      // Nếu là chuỗi rỗng thì return
+      if (!value) {
+        input.value = '';
+        return;
+      }
+
+      // Convert sang số và format với dấu phẩy ngăn cách hàng nghìn
+      const number = parseInt(value);
+      input.value = number.toLocaleString('vi-VN');
+    }
+
+    function isNumberKey(evt) {
+      const charCode = (evt.which) ? evt.which : evt.keyCode;
+      if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode !== 46) {
+        return false;
+      }
+      return true;
+    }
+
+    // Validate và format số khi người dùng nhập
+    function validateNumber(input) {
+      // Loại bỏ tất cả ký tự không phải số
+      let value = input.value.replace(/[^\d]/g, '');
+      
+      // Nếu là chuỗi rỗng thì return
+      if (!value) {
+        input.value = '';
+        return;
+      }
+
+      // Convert sang số và format với dấu phẩy ngăn cách hàng nghìn
+      const number = parseInt(value);
+      input.value = number.toLocaleString('vi-VN');
     }
   </script>
 

@@ -141,7 +141,15 @@
       <div class="frame-35040">
         <div class="frame-91">
           <div class="_890-000">
-            <input type="number" class="amount-input" placeholder="0" />
+            <input 
+              class="amount-input"
+              type="text"
+              id="amount"
+              onkeypress="return isNumberKey(event)"
+              oninput="validateNumber(this)"
+              maxlength="15"
+              placeholder="0"
+            />
           </div>
           <!-- <div class="vector-27"></div> -->
         </div>
